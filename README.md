@@ -1,5 +1,5 @@
 # ArtificialPanc
-This is my Capstone project performed for the Machine Learning nanodegree at Udacity.
+This is my Capstone project performed for the Machine Learning nanodegree at Udacity.  The purpose of this work is to find a regression line to represent the body's production of glucose throughout the day.  This will give a diabetic the ability to find an close fit basal insulin rate to counteract normal body glucose production.
 
 ### Install
 
@@ -16,7 +16,7 @@ If you do not have Python installed yet, it is highly recommended that you insta
 
 ### Code
 
-This is my code for my Udacity Capstone Project.  The analysis is done in a Jupyter Notebook under the file name of `CapstoneDiabetes1.ipynb`.  The purpose of this analysis is to set of the basis for a machine learning algorithm that can act like an articial pancreas and predict blood glucose levels based on the previous recorded data from the continuous glucose monitor (CGM).  The attached text files are my personal data that are used to create the dataset for a supervised learning algorithm.  The other python codes are used inside the IPython Notebook and do not need adjusting at this time.
+This is my code for my Udacity Capstone Project.  The analysis is done in a Jupyter Notebook under the file name of `CapstoneDiabetes1.ipynb`.  The purpose of this analysis is to set of the basis for a machine learning algorithm that can predict blood glucose levels based on the previous recorded data from the continuous glucose monitor (CGM).  The attached text files are my personal data that are used to create the dataset for a supervised learning algorithm.  The other python codes are used inside the IPython Notebook and do not need adjusting at this time.
 
 ### Run
 
@@ -36,18 +36,23 @@ Run the Jupyter Notebook software and project file in your browser.  The file na
 
 ## Data
 
-The diabetes data is included as a selection of 576 data points collected on my (Richard Biven) personal devices (Dexcom CGM, Omnipod Pump, and my journey for carb entries. 
+The diabetes data is included as a selection of 864 data points collected on my (Richard Biven) personal devices (Dexcom CGM, Omnipod Pump) and my journal for carb entries. 
 
 **Features**
-1) `Bolus Taken`: amount of units of insulin taken at a specific moment in the day (units of insulin) (Continuous); 
-2) `Basal Insulin`: amount of units of insulin delivered continuous throughout the day (units of insulin) (Continuous); 
-3) `Basal Carbs (Liver)`: amount of carbs body produces continuously throughout the day (grams) (Continuous); 
-4) `Carbs Eaten`:  amount of carbs taken at a specific moment in the day (grams) (Continuous);
+1) `Time`: Time of day (Continuous)
+2) `Bolus Taken`: amount of units of insulin taken at a specific moment in the day (units of insulin) (Continuous); 
+3) `Basal Insulin`: amount of units of insulin delivered continuous throughout the day (units of insulin) (Continuous); 
+4) `Basal Carbs (Liver)`: amount of carbs body produces continuously throughout the day (grams) (Continuous); 
+5) `Carbs Eaten`:  amount of carbs taken at a specific moment in the day (grams) (Continuous);
+6) `Blood GLucose (BG)`: BG at 5 minute intervals in the day (Continuous).
 
 *Dependent Features:*
 * `Bolus Ingested`: Use `Bolus Taken` to calculate how the body actually ingests the insulin over a period of time (Continuous)
 * `Carbs Ingested`: Use `Carbs Eaten` to calculate how the body actually ingests the carbs over a period of time (Continuous)
-* `Blood GLucose (BG)`: Using the features above to calculate the BG at all times in the day (Continuous).
+
+### Notes:
+The features `Carbs Eaten` and `Bolus Taken` are used to calculate `Carbs Ingested` and `Bolus Ingested`.  These features are used to calculate `Basal Carbs (Liver)`.  All four of these features are not used in the machine learning regression; however, there are necessary for calculation of `Basal Carbs (Liver)` and predicting future `Blood Glucose` levels.
+
 
 # From Rbiven
 The above is the documentation for my Capstone project in the Udacity Machine Learning nanodegree.  I am putting my results on Github for peer review.  If you are interesting in my work or have questions about my methods, please let me know. If you are interesting in learning more about machine learning, I highly recommend the Udacity Nanodegree course.
