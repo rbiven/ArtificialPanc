@@ -16,7 +16,7 @@ If you do not have Python installed yet, it is highly recommended that you insta
 
 ### Code
 
-This is my code for my Udacity Capstone Project.  The analysis is done in a Jupyter Notebook under the file name of `CapstoneDiabetes1.ipynb`.  The purpose of this analysis is to set of the basis for a machine learning algorithm that can predict blood glucose levels based on the previous recorded data from the continuous glucose monitor (CGM).  The attached text files are my personal data that are used to create the dataset for a supervised learning algorithm.  The other python codes are used inside the IPython Notebook and do not need adjusting at this time.
+This is my code for my Udacity Capstone Project.  The analysis is done in a Jupyter Notebook under the file name of `CapstoneDiabetes1.ipynb`.  The purpose of this analysis is to set up the basis for a machine learning algorithm that can predict blood glucose levels based on the previous recorded data from the continuous glucose monitor (CGM).  The attached text files are my personal data (all .txt files) that are used to create the dataset (using the file: CreatingData.py) for a supervised learning algorithm.  The other python files are used inside the IPython Notebook and do not need used or adjusting at this time.
 
 ### Run
 
