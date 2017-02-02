@@ -39,6 +39,7 @@ Run the Jupyter Notebook software and project file in your browser.  The file na
 The diabetes data is included as a selection of 864 data points collected on my (Richard Biven) personal devices (Dexcom CGM, Omnipod Pump) and my journal for carb entries. 
 
 **Features**
+
 1. `Time`: Time of day (Continuous)
 2. `Bolus Taken`: amount of units of insulin taken at a specific moment in the day (units of insulin) (Continuous); 
 3. `Basal Insulin`: amount of units of insulin delivered continuous throughout the day (units of insulin) (Continuous); 
