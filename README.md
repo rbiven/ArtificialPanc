@@ -39,12 +39,12 @@ Run the Jupyter Notebook software and project file in your browser.  The file na
 The diabetes data is included as a selection of 864 data points collected on my (Richard Biven) personal devices (Dexcom CGM, Omnipod Pump) and my journal for carb entries. 
 
 **Features**
-1) `Time`: Time of day (Continuous)
-2) `Bolus Taken`: amount of units of insulin taken at a specific moment in the day (units of insulin) (Continuous); 
-3) `Basal Insulin`: amount of units of insulin delivered continuous throughout the day (units of insulin) (Continuous); 
-4) `Basal Carbs (Liver)`: amount of carbs body produces continuously throughout the day (grams) (Continuous); 
-5) `Carbs Eaten`:  amount of carbs taken at a specific moment in the day (grams) (Continuous);
-6) `Blood GLucose (BG)`: BG at 5 minute intervals in the day (Continuous).
+1. `Time`: Time of day (Continuous)
+2. `Bolus Taken`: amount of units of insulin taken at a specific moment in the day (units of insulin) (Continuous); 
+3. `Basal Insulin`: amount of units of insulin delivered continuous throughout the day (units of insulin) (Continuous); 
+4. `Basal Carbs (Liver)`: amount of carbs body produces continuously throughout the day (grams) (Continuous); 
+5. `Carbs Eaten`:  amount of carbs taken at a specific moment in the day (grams) (Continuous);
+6. `Blood GLucose (BG)`: BG at 5 minute intervals in the day (Continuous).
 
 *Dependent Features:*
 * `Bolus Ingested`: Use `Bolus Taken` to calculate how the body actually ingests the insulin over a period of time (Continuous)
